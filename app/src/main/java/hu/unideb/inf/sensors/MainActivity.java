@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         List<Sensor> sensorList = sensorManager.getSensorList(Sensor.TYPE_ALL);
 
         sensorsTextView = findViewById(R.id.sensorsTextView);
-        sensorsTextView.setMovementMethod(new ScrollingMovementMethod());
+        //sensorsTextView.setMovementMethod(new ScrollingMovementMethod());
         sensorsTextView.setText(sensorList.toString());
     }
 }
